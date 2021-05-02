@@ -11,6 +11,6 @@ class IncomeViewSet(viewsets.ModelViewSet):
     serializer_class = IncomeSerializer
     queryset = Income.objects.all()
 
-    # only get leads you created
+    # only get Income you created
     def get_queryset(self):
         return self.queryset.filter(created_by=self.request.user)
