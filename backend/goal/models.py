@@ -5,6 +5,7 @@ from datetime import datetime, date
 
 class Goal(models.Model):
     title = models.CharField(max_length=256)
+    description = models.TextField(null=True, blank=True, )
     savings_needed = models.FloatField(
         default=0, verbose_name='Savings needed')
     date = models.DateField(
