@@ -4,7 +4,7 @@ from datetime import datetime, date
 
 
 class Save(models.Model):
-    source = models.CharField(max_length=30)
+    title = models.CharField(max_length=30)
     savings = models.FloatField(default=0, verbose_name='Savings')
     date = models.DateField(
         auto_now_add=False, auto_now=False, blank=True, null=True)
@@ -15,4 +15,4 @@ class Save(models.Model):
         verbose_name_plural = "savings"
 
     def __str__(self):
-        return self.source
+        return self.title

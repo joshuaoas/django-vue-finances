@@ -14,7 +14,7 @@ class IncomeSerializer(serializers.ModelSerializer):
         ),
         fields = (
             'id',
-            'source',
+            'title',
             'income',
             'date',
             'timestamp',

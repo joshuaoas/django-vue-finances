@@ -14,7 +14,7 @@ class SaveSerializer(serializers.ModelSerializer):
         ),
         fields = (
             'id',
-            'source',
+            'title',
             'savings',
             'date',
             'timestamp',

@@ -4,7 +4,7 @@ from datetime import datetime, date
 
 
 class Income(models.Model):
-    source = models.CharField(max_length=30)
+    title = models.CharField(max_length=30)
     income = models.FloatField(default=0, verbose_name='Income')
     date = models.DateField(
         auto_now_add=False, auto_now=False, blank=True, null=True)
@@ -15,4 +15,4 @@ class Income(models.Model):
         verbose_name_plural = "income"
 
     def __str__(self):
-        return self.source
+        return self.title

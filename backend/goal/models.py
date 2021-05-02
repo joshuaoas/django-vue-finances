@@ -17,4 +17,4 @@ class Goal(models.Model):
         verbose_name_plural = "goals"
 
     def __str__(self):
-        return self.source
+        return self.title
