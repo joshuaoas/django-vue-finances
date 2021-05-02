@@ -1,4 +1,4 @@
-# finances
+# frontend
 
 ## Project setup
 ```
